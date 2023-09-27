@@ -29,7 +29,7 @@ NODE_URL = "https://rpc.ankr.com/http/aptos/v1"
 ITERATIONS = 1
 
 # пропускать каждый N-ый кошелек без перемешивания. False если простое перемешивание
-N = 2   # number or False
+MISS_NUM = 2   # number or False
 
 # Пауза между операциями на кошельках. Указано в секундах ОТ и ДО.
 WAIT_FROM = 2
