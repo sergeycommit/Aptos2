@@ -1,4 +1,4 @@
-.private_keys.txt
+*.private_keys.txt
 recepient_addresses.txt
 
 .idea/
