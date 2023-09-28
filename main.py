@@ -79,7 +79,9 @@ if __name__ == '__main__':
             random.shuffle(private_keys)
         for n in range(ITERATIONS):
             for num, key in enumerate(private_keys):
-                if not MISS_NUM and (num+1)%MISS_NUM == 0:
+                if not MISS_NUM:
+                    continue
+                elif (num+1)%MISS_NUM == 0:
                     continue
                 if MODULE == 2:
                     if RANDOM_SWAP:
@@ -169,7 +171,9 @@ if __name__ == '__main__':
 
             for num, key in enumerate(private_keys):
 
-                if not MISS_NUM and (num+1)%MISS_NUM == 0:
+                if not MISS_NUM:
+                    continue
+                elif (num + 1) % MISS_NUM == 0:
                     continue
 
                 if RANDOM_NFT_PRICE:
