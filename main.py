@@ -75,11 +75,11 @@ if __name__ == '__main__':
 
     if MODULE in (2, 4, 6):
         logger.info(f'Успешно загружено {len(private_keys)} wallet\'s')
-        if not N:
+        if not MISS_NUM:
             random.shuffle(private_keys)
         for n in range(ITERATIONS):
             for num, key in enumerate(private_keys):
-                if (num+1)%MISS_NUM == 0:
+                if not MISS_NUM and (num+1)%MISS_NUM == 0:
                     continue
                 if MODULE == 2:
                     if RANDOM_SWAP:
@@ -162,14 +162,14 @@ if __name__ == '__main__':
     if MODULE == 5:
         logger.info(f'Успешно загружено {len(private_keys)} wallet\'s')
 
-        if not N:
+        if not MISS_NUM:
             random.shuffle(private_keys)
 
         for n in range(ITERATIONS):
 
             for num, key in enumerate(private_keys):
 
-                if N and (num+1)%MISS_NUM == 0:
+                if not MISS_NUM and (num+1)%MISS_NUM == 0:
                     continue
 
                 if RANDOM_NFT_PRICE:
