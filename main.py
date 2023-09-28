@@ -80,7 +80,7 @@ if __name__ == '__main__':
         for n in range(ITERATIONS):
             for num, key in enumerate(private_keys):
                 if not MISS_NUM:
-                    continue
+                    pass
                 elif (num+1)%MISS_NUM == 0:
                     continue
                 if MODULE == 2:
@@ -172,7 +172,7 @@ if __name__ == '__main__':
             for num, key in enumerate(private_keys):
 
                 if not MISS_NUM:
-                    continue
+                    pass
                 elif (num + 1) % MISS_NUM == 0:
                     continue
 
